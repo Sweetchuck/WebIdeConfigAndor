@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<templateSet group="Andor PHP">
-  <template name="fore" value="foreach ($ITERABLE$ as $$$VAR_VALUE$) {&#10;  $END$&#10;}" description="foreach(iterable_expr as $value) {...}" toReformat="true" toShortenFQNames="true">
-    <variable name="ITERABLE" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR_VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+<templateSet group="Andor XSL">
+  <template name="ai" value="&lt;xsl:apply-imports/&gt;$END$" description="Apply-Imports." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -14,14 +12,12 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
-      <option name="PHP" value="true" />
+      <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="forek" value="foreach ($ITERABLE$ as $$$VAR_KEY$ =&gt; $$$VAR_VALUE$) {&#10;  $END$&#10;}" description="foreach(iterable_expr as $key =&gt; $value) {...}" toReformat="true" toShortenFQNames="true">
-    <variable name="ITERABLE" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR_KEY" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR_VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="an" value="&lt;xsl:attribute name=&quot;$NAME$&quot;&gt;$END$&lt;/xsl:attribute&gt;" description="Attribute-Name." toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -33,11 +29,12 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
-      <option name="PHP" value="true" />
+      <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="thr" value="throw new $END$" description="throw new" toReformat="true" toShortenFQNames="true">
+  <template name="ats" value="&lt;xsl:apply-templates select=&quot;$SELECT$&quot;/&gt;$END$" description="Apply-Templates-Select." toReformat="false" toShortenFQNames="true">
+    <variable name="SELECT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -49,13 +46,13 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
-      <option name="PHP" value="true" />
+      <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="pubf" value="public function $NAME$($PARAMETERS$) {&#10;  $END$&#10;}" description="public function" toReformat="true" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="&quot;foo&quot;" alwaysStopAt="true" />
-    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="atsm" value="&lt;xsl:apply-templates select=&quot;$SELECT$&quot; mode=&quot;$MODE$&quot;/&gt;$END$" description="Apply-Templates-Select-Mode." toReformat="false" toShortenFQNames="true">
+    <variable name="SELECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -67,13 +64,11 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
-      <option name="PHP" value="true" />
+      <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="pubsf" value="public static function $NAME$($PARAMETERS$) {&#10;  $END$&#10;}" description="public static function" toReformat="true" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="&quot;foo&quot;" alwaysStopAt="true" />
-    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="cos" value="&lt;xsl:copy-of select=&quot;$END$&quot;/&gt;" description="Copy-Of-Select." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -85,13 +80,12 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
-      <option name="PHP" value="true" />
+      <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="prof" value="protected function $NAME$($PARAMETERS$) {&#10;  $END$&#10;}" description="protected function" toReformat="true" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="&quot;foo&quot;" alwaysStopAt="true" />
-    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ctn" value="&lt;xsl:call-template name=&quot;$NAME$&quot;/&gt;$END$" description="Call-Template-Name." toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -103,13 +97,14 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
-      <option name="PHP" value="true" />
+      <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="prosf" value="protected static function $NAME$($PARAMETERS$) {&#10;  $END$&#10;}" description="protected static function" toReformat="true" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="&quot;foo&quot;" alwaysStopAt="true" />
-    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="ctnwp" value="&lt;xsl:call-template name=&quot;$NAME$&quot;&gt;&#10;      &lt;xsl:with-param name=&quot;$PNAME$&quot; select=&quot;$SELECT$&quot;/&gt;&#10;&lt;/xsl:call-template&gt;$END$" description="Call-Template-Name-With-Param." toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SELECT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -121,13 +116,12 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
-      <option name="PHP" value="true" />
+      <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="prif" value="private function $NAME$($PARAMETERS$) {&#10;  $END$&#10;}" description="private function" toReformat="true" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="&quot;foo&quot;" alwaysStopAt="true" />
-    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="cwt" value="&lt;xsl:choose&gt;&#10;    &lt;xsl:when test=&quot;$TEST$&quot;&gt;&#10;        $END$&#10;    &lt;/xsl:when&gt;&#10;&lt;/xsl:choose&gt;" description="Choose-When-Test." toReformat="false" toShortenFQNames="true">
+    <variable name="TEST" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -139,13 +133,12 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
-      <option name="PHP" value="true" />
+      <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="prisf" value="private static function $NAME$($PARAMETERS$) {&#10;  $END$&#10;}" description="private static function" toReformat="true" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="&quot;foo&quot;" alwaysStopAt="true" />
-    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="cwto" value="&lt;xsl:choose&gt;&#10;    &lt;xsl:when test=&quot;$TEST$&quot;&gt;&#10;        $END$&#10;    &lt;/xsl:when&gt;&#10;    &lt;xsl:otherwise&gt;&#10;        &#10;    &lt;/xsl:otherwise&gt;&#10;&lt;/xsl:choose&gt;" description="Choose-When-Test-Otherwise." toReformat="false" toShortenFQNames="true">
+    <variable name="TEST" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -157,13 +150,12 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
-      <option name="PHP" value="true" />
+      <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="iterator_dir" value="$$$iterator$ = new \DirectoryIterator($directory$);&#10;while ($$$iterator$-&gt;valid()) {&#10;  if ($$$iterator$-&gt;isDot() || !$$$iterator$-&gt;isDir()) {&#10;    $$$iterator$-&gt;next();&#10;    continue;&#10;  }&#10;&#10;  $END$&#10;&#10;  $$$iterator$-&gt;next();&#10;}" description="DirectoryIterator - Only directories." toReformat="true" toShortenFQNames="true">
-    <variable name="iterator" expression="" defaultValue="&quot;directory&quot;" alwaysStopAt="true" />
-    <variable name="directory" expression="" defaultValue="&quot;'/path/to/dir'&quot;" alwaysStopAt="true" />
+  <template name="fe" value="&lt;xsl:for-each select=&quot;$SELECT$&quot;&gt;&#10;    $END$&#10;&lt;/xsl:for-each&gt;" description="For-Each." toReformat="false" toShortenFQNames="true">
+    <variable name="SELECT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -175,13 +167,12 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
-      <option name="PHP" value="true" />
+      <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="iterator_file" value="$$$iterator$ = new \DirectoryIterator($directory$);&#10;while ($$$iterator$-&gt;valid()) {&#10;  if ($$$iterator$-&gt;isDir()) {&#10;    $$$iterator$-&gt;next();&#10;    continue;&#10;  }&#10;&#10;  $END$&#10;&#10;  $$$iterator$-&gt;next();&#10;}" description="DirectoryIterator - Only files." toReformat="true" toShortenFQNames="true">
-    <variable name="iterator" expression="" defaultValue="&quot;file&quot;" alwaysStopAt="true" />
-    <variable name="directory" expression="" defaultValue="&quot;'/path/to/dir'&quot;" alwaysStopAt="true" />
+  <template name="it" value="&lt;xsl:if test=&quot;$TEST$&quot;&gt;&#10;    $END$&#10;&lt;/xsl:if&gt;" description="If-Test." toReformat="false" toShortenFQNames="true">
+    <variable name="TEST" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -193,13 +184,14 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
-      <option name="PHP" value="true" />
+      <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="iterator_glob" value="$$$iterator$ = new \GlobIterator($directory$);&#10;while ($$$iterator$-&gt;valid()) {&#10;  $END$&#10;&#10;  $$$iterator$-&gt;next();&#10;}" description="GlobIterator" toReformat="true" toShortenFQNames="true">
-    <variable name="iterator" expression="" defaultValue="&quot;file&quot;" alwaysStopAt="true" />
-    <variable name="directory" expression="" defaultValue="&quot;'/path/to/dir/*.*'&quot;" alwaysStopAt="true" />
+  <template name="kn" value="&lt;xsl:key name=&quot;$NAME$&quot; match=&quot;$MATCH$&quot; use=&quot;$USE$&quot;/&gt;$END$" description="Key-Name." toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MATCH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="USE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -211,12 +203,11 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
-      <option name="PHP" value="true" />
+      <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="switch" value="switch ($subject$) {&#10;  case$END$&#10;}" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="subject" expression="" defaultValue="&quot;$variable&quot;" alwaysStopAt="true" />
+  <template name="o" value="&lt;xsl:otherwise&gt;&#10;    $END$&#10;&lt;/xsl:otherwise&gt;" description="Otherwise." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -228,12 +219,11 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
-      <option name="PHP" value="true" />
+      <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="case" value="case '$case$':&#10;  $END$&#10;  break;&#10;" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="case" expression="" defaultValue="&quot;foo&quot;" alwaysStopAt="true" />
+  <template name="pn" value="&lt;xsl:param name=&quot;$END$&quot;/&gt;" description="Param-Name." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -245,12 +235,12 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
-      <option name="PHP" value="true" />
+      <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="if" value="if ($condition$) {&#10;  $END$&#10;}" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="tm" value="&lt;xsl:template match=&quot;$MATCH$&quot;&gt;&#10;    $END$&#10;&lt;/xsl:template&gt;" description="Template-Match." toReformat="false" toShortenFQNames="true">
+    <variable name="MATCH" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -262,12 +252,13 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
-      <option name="PHP" value="true" />
+      <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="ife" value="if ($condition$) {&#10;  $END$&#10;}&#10;else {&#10;}" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="tmm" value="&lt;xsl:template match=&quot;$MATCH$&quot; mode=&quot;$MODE$&quot;&gt;&#10;    $END$&#10;&lt;/xsl:template&gt;" description="Template-Match-Mode." toReformat="false" toShortenFQNames="true">
+    <variable name="MATCH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -279,13 +270,12 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
-      <option name="PHP" value="true" />
+      <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="if_" value="if ($condition$) {&#10;  $END$$SELECTION$&#10;}" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+  <template name="tn" value="&lt;xsl:template name=&quot;$NAME$&quot;&gt;&#10;    $END$&#10;&lt;/xsl:template&gt;" description="Template-Name." toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -297,13 +287,11 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
-      <option name="PHP" value="true" />
+      <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="ife_" value="if ($condition$) {&#10;  $END$$SELECTION$&#10;}&#10;else {&#10;}" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+  <template name="tt" value="&lt;xsl:text&gt;$END$&lt;/xsl:text&gt;" description="Text." toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -315,14 +303,12 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
-      <option name="PHP" value="true" />
+      <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="fore_" value="foreach ($ITERABLE$ as $$$VAR_VALUE$) {&#10;  $END$$SELECTION$&#10;}" description="foreach(iterable_expr as $value) {...}" toReformat="true" toShortenFQNames="true">
-    <variable name="ITERABLE" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR_VALUE" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+  <template name="vn" value="&lt;xsl:variable name=&quot;$NAME$&quot;&gt;$END$&lt;/xsl:variable&gt;" description="Variable-Name." toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -334,15 +320,13 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
-      <option name="PHP" value="true" />
+      <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="forek_" value="foreach ($ITERABLE$ as $$$VAR_KEY$ =&gt; $$$VAR_VALUE$) {&#10;  $END$$SELECTION$&#10;}" description="foreach(iterable_expr as $key =&gt; $value) {...}" toReformat="true" toShortenFQNames="true">
-    <variable name="ITERABLE" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR_KEY" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR_VALUE" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+  <template name="vns" value="&lt;xsl:variable name=&quot;$NAME$&quot; select=&quot;$SELECT$&quot;/&gt;" description="Variable-Name-Select." toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SELECT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -354,7 +338,76 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
-      <option name="PHP" value="true" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="vos" value="&lt;xsl:value-of select=&quot;$END$&quot;/&gt;" description="Value-Of-Select." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="wp" value="&lt;xsl:with-param name=&quot;$NAME$&quot; select=&quot;$SELECT$&quot;/&gt;$END$" description="With-Param." toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SELECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="wpn" value="&lt;xsl:with-param name=&quot;$NAME$&quot; select=&quot;$SELECT$&quot;/&gt;$END$" description="With-Param-Name." toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SELECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="wt" value="&lt;xsl:when test=&quot;$TEST$&quot;&gt;$END$&lt;/xsl:when&gt;" description="When-Test." toReformat="false" toShortenFQNames="true">
+    <variable name="TEST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
