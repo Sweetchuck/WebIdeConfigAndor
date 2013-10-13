@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<templateSet group="Andor html/xml">
+<templateSet group="Andor - html/xml">
   <template name="t" value="&lt;$TAG$ $ATTRS$&gt;$END$&lt;/$TAG_NAME$&gt;" description="Tag pair" toReformat="true" toShortenFQNames="true">
     <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ATTRS" expression="" defaultValue="&quot;&quot;" alwaysStopAt="false" />
@@ -15,6 +15,7 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
@@ -34,6 +35,7 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
@@ -53,6 +55,7 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
@@ -70,6 +73,7 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>

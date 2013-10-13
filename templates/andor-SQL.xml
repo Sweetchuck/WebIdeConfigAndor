@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<templateSet group="Andor SQL">
+<templateSet group="Andor - SQL">
   <template name="sela" value="select * from $table$ $alias$ where $alias$.$END$;" description="select * from table with alias" toReformat="true" toShortenFQNames="false">
     <variable name="table" expression="complete()" defaultValue="" alwaysStopAt="true" />
     <variable name="alias" expression="complete()" defaultValue="&quot;alias&quot;" alwaysStopAt="true" />
@@ -14,6 +14,7 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
@@ -32,6 +33,7 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
@@ -50,6 +52,7 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
@@ -70,6 +73,7 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
@@ -89,6 +93,7 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
@@ -108,6 +113,7 @@
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
