@@ -11,6 +11,7 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
@@ -29,6 +30,7 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
@@ -47,6 +49,7 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
@@ -66,6 +69,7 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
@@ -83,6 +87,7 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
@@ -101,6 +106,7 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
@@ -121,6 +127,7 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
@@ -139,6 +146,7 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
@@ -157,6 +165,7 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
@@ -175,6 +184,7 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
@@ -193,6 +203,7 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
@@ -213,6 +224,7 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
@@ -230,6 +242,7 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
@@ -247,6 +260,7 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
@@ -265,6 +279,7 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
@@ -284,6 +299,7 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
@@ -302,6 +318,7 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
@@ -319,6 +336,7 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
@@ -337,6 +355,7 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
@@ -356,6 +375,7 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
@@ -373,6 +393,7 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
@@ -392,6 +413,7 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
@@ -411,6 +433,7 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
@@ -429,6 +452,7 @@
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />

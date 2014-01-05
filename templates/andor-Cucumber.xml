@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<templateSet group="Andor - SQL">
-  <template name="sela" value="select * from $table$ $alias$ where $alias$.$END$;" description="select * from table with alias" toReformat="true" toShortenFQNames="false">
-    <variable name="table" expression="complete()" defaultValue="" alwaysStopAt="true" />
-    <variable name="alias" expression="complete()" defaultValue="&quot;alias&quot;" alwaysStopAt="true" />
+<templateSet group="Andor - Cucumber">
+  <template name="s" value="tags$END$&#10;Scenario: $scenario$&#10;  g&#10;  w&#10;  t" description="Scenario" toReformat="false" toShortenFQNames="true">
+    <variable name="scenario" expression="" defaultValue="&quot;Description&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -15,14 +14,13 @@
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="true" />
       <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="ins" value="insert into $table$ ($columns$) values ($END$);" description="insert into table values" toReformat="true" toShortenFQNames="false">
-    <variable name="table" expression="complete()" defaultValue="" alwaysStopAt="true" />
-    <variable name="columns" expression="complete()" defaultValue="" alwaysStopAt="true" />
+  <template name="f" value="tags$END$&#10;Feature: $description$&#10;  s" description="Feature" toReformat="false" toShortenFQNames="true">
+    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -35,14 +33,14 @@
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="true" />
       <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="selc" value="select count(*) from $table$ $alias$ where $alias$.$END$;" description="select count(*) from table with alias" toReformat="true" toShortenFQNames="false">
-    <variable name="table" expression="complete()" defaultValue="" alwaysStopAt="true" />
-    <variable name="alias" expression="complete()" defaultValue="&quot;alias&quot;" alwaysStopAt="true" />
+  <template name="g" value="$condition$ $action$&#10;g$END$" description="Given and And" toReformat="false" toShortenFQNames="true">
+    <variable name="condition" expression="enum(&quot;Given&quot;, &quot;And&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="action" expression="enum(&quot;I am on the homepage&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -55,16 +53,13 @@
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="true" />
       <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="tab" value="create table $table$ (&#10;  $col$ $type$ $null$$END$&#10;);" description="create table (column)" toReformat="true" toShortenFQNames="false">
-    <variable name="table" expression="" defaultValue="&quot;new_table&quot;" alwaysStopAt="true" />
-    <variable name="col" expression="" defaultValue="&quot;col&quot;" alwaysStopAt="true" />
-    <variable name="type" expression="" defaultValue="&quot;int&quot;" alwaysStopAt="true" />
-    <variable name="null" expression="" defaultValue="&quot;not null&quot;" alwaysStopAt="true" />
+  <template name="tags" value="$js$" description="Tags" toReformat="true" toShortenFQNames="true">
+    <variable name="js" expression="enum(&quot;@javascript &quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -77,15 +72,14 @@
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="true" />
       <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="col" value="$col$ $type$ $null$$END$" description="column definition" toReformat="true" toShortenFQNames="false">
-    <variable name="col" expression="" defaultValue="&quot;col&quot;" alwaysStopAt="true" />
-    <variable name="type" expression="" defaultValue="&quot;int&quot;" alwaysStopAt="true" />
-    <variable name="null" expression="" defaultValue="&quot;not null&quot;" alwaysStopAt="true" />
+  <template name="w" value="$condition$ $action$&#10;w$END$" description="When and And" toReformat="false" toShortenFQNames="true">
+    <variable name="condition" expression="enum(&quot;When&quot;, &quot;And&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="action" expression="enum(&quot;I wait for 5 seconds&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -98,15 +92,14 @@
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="true" />
       <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="upd" value="update $table_name$ set $col$ = $value$ where $END$;" description="update table set column value" toReformat="true" toShortenFQNames="false">
-    <variable name="table_name" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="col" expression="complete()" defaultValue="" alwaysStopAt="true" />
-    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="t" value="$condition$ $action$&#10;t$END$" description="Then and And" toReformat="false" toShortenFQNames="true">
+    <variable name="condition" expression="enum(&quot;Then&quot;, &quot;And&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="action" expression="enum(&quot;I should see the text \&quot;foo\&quot;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -119,7 +112,7 @@
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
       <option name="SQL" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="true" />
       <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
