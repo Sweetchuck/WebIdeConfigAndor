@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Andor - Cucumber">
-  <template name="s" value="tags$END$&#10;Scenario: $scenario$&#10;  g&#10;  w&#10;  t" description="Scenario" toReformat="false" toShortenFQNames="true">
-    <variable name="scenario" expression="" defaultValue="&quot;Description&quot;" alwaysStopAt="true" />
+  <template name="s" value="@$END$&#10;Scenario: $description$&#10;  g&#10;  w&#10;  t" description="Scenario" toReformat="false" toShortenFQNames="true">
+    <variable name="description" expression="" defaultValue="&quot;Some helpful description.&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -19,8 +19,8 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="f" value="tags$END$&#10;Feature: $description$&#10;  s" description="Feature" toReformat="false" toShortenFQNames="true">
-    <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="f" value="Feature: $description$&#10;  b$END$&#10;  s" description="Feature" toReformat="false" toShortenFQNames="true">
+    <variable name="description" expression="" defaultValue="&quot;Some helpful description.&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -58,8 +58,8 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="tags" value="$js$" description="Tags" toReformat="true" toShortenFQNames="true">
-    <variable name="js" expression="enum(&quot;@javascript &quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
+  <template name="@" value="$tag$ @$END$" description="Tags" toReformat="true" toShortenFQNames="true">
+    <variable name="tag" expression="enum(&quot;@javascript&quot;, &quot;@api&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -100,6 +100,24 @@
   <template name="t" value="$condition$ $action$&#10;t$END$" description="Then and And" toReformat="false" toShortenFQNames="true">
     <variable name="condition" expression="enum(&quot;Then&quot;, &quot;And&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="action" expression="enum(&quot;I should see the text \&quot;foo\&quot;&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="true" />
+      <option name="PHP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="b" value="Background:&#10;  g$END$&#10;" description="When and And" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />

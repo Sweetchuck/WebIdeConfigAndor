@@ -336,7 +336,6 @@
   </template>
   <template name="ife_" value="if ($condition$) {&#10;  $END$$SELECTION$&#10;}&#10;else {&#10;}" description="If and else with custom condition, selection goes into TRUE way." toReformat="true" toShortenFQNames="true">
     <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -357,7 +356,6 @@
   <template name="fore_" value="foreach ($ITERABLE$ as $$$VAR_VALUE$) {&#10;  $END$$SELECTION$&#10;}" description="foreach(iterable_expr as $value) {...}" toReformat="true" toShortenFQNames="true">
     <variable name="ITERABLE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VAR_VALUE" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -379,7 +377,6 @@
     <variable name="ITERABLE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VAR_KEY" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VAR_VALUE" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -494,7 +491,7 @@
     </context>
   </template>
   <template name="@par" value="@param $type$ $$$variable$&#10; *   $description$" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="type" expression="enum(&quot;int&quot;, &quot;float&quot;, &quot;double&quot;, &quot;string&quot;, &quot;bool&quot;, &quot;object&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="type" expression="enum(&quot;array&quot;, &quot;int&quot;, &quot;float&quot;, &quot;double&quot;, &quot;string&quot;, &quot;bool&quot;, &quot;object&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="variable" expression="" defaultValue="&quot;ctrl_space&quot;" alwaysStopAt="true" />
     <variable name="description" expression="" defaultValue="&quot;Some informative description.&quot;" alwaysStopAt="true" />
     <context>
@@ -533,7 +530,46 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="kvt" value="'$key$' =&gt; t('$END$')," description="" toReformat="true" toShortenFQNames="true">
+  <template name="kvb" value="'$key$' =&gt; $value$," description="" toReformat="true" toShortenFQNames="true">
+    <variable name="key" expression="" defaultValue="&quot;foo&quot;" alwaysStopAt="true" />
+    <variable name="value" expression="enum(&quot;TRUE&quot;, &quot;FALSE&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="try" value="try {&#10;  $SELECTION$$END$&#10;}&#10;catch ($exception$ $e) {&#10;}" description="Try - Catch" toReformat="true" toShortenFQNames="true">
+    <variable name="exception" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="kvv" value="'$key$' =&gt; $END$" description="Array key =&gt; value. The value can be anything." toReformat="true" toShortenFQNames="true">
     <variable name="key" expression="" defaultValue="&quot;foo&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -552,9 +588,9 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="kvb" value="'$key$' =&gt; $value$," description="" toReformat="true" toShortenFQNames="true">
-    <variable name="key" expression="" defaultValue="&quot;foo&quot;" alwaysStopAt="true" />
-    <variable name="value" expression="enum(&quot;TRUE&quot;, &quot;FALSE&quot;)" defaultValue="" alwaysStopAt="true" />
+  <template name="func" value="function $name$ ($parameters$) {&#10;  $END$&#10;}" description="New function" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="firstWord(fileNameWithoutExtension())" defaultValue="" alwaysStopAt="true" />
+    <variable name="parameters" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />

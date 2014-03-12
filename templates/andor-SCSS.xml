@@ -117,9 +117,9 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="each" value="@each $$$item$ in $list$ {&#10;  $END$&#10;}" description="Control directive" toReformat="true" toShortenFQNames="true">
+  <template name="fore" value="@each $$$item$ in $list$ {&#10;  $END$&#10;}" description="Control directive" toReformat="true" toShortenFQNames="true">
     <variable name="item" expression="" defaultValue="&quot;item&quot;" alwaysStopAt="true" />
-    <variable name="list" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="list" expression="" defaultValue="&quot;$list&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />

@@ -138,29 +138,10 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="func_obj" value="$function$: function($END$) {&#10;}$delimiter$&#10;" description="Function property of an object." toReformat="true" toShortenFQNames="true">
-    <variable name="function" expression="" defaultValue="&quot;foo&quot;" alwaysStopAt="true" />
-    <variable name="delimiter" expression="" defaultValue="&quot;,&quot;" alwaysStopAt="true" />
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="JAVA_SCRIPT" value="true" />
-      <option name="TypeScript" value="false" />
-      <option name="SQL" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="PHP" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="func_this" value="this.$function$ = function($END$) {&#10;}$delimiter$&#10;" description="Function property of an object." toReformat="true" toShortenFQNames="true">
-    <variable name="function" expression="" defaultValue="&quot;foo&quot;" alwaysStopAt="true" />
-    <variable name="delimiter" expression="" defaultValue="&quot;;&quot;" alwaysStopAt="true" />
+  <template name="func" value="$function$ $assign$ function ($END$) {&#10;}$delimiter$&#10;" description="Assign function to a property of an object." toReformat="true" toShortenFQNames="true">
+    <variable name="function" expression="enum(&quot;Drupal.&quot;, &quot;this.&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="assign" expression="enum(&quot; =&quot;, &quot;:&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="delimiter" expression="enum(&quot;;&quot;, &quot;,&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
