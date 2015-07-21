@@ -11,7 +11,7 @@ Requirements
 
 Aliquam erat volutpat. Aliquam eu nisi in leo blandit cursus eget non dui.
 Curabitur vehicula id sem in laoreet. Etiam diam purus, suscipit non tristique
-dapibus at dui.
+dapibus at duic.
 
 Install
 -------

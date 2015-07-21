@@ -1,8 +1,9 @@
-<templateSet group="Andor - gettext">
-  <template name="msg" value="msgid &quot;$END$&quot;&#10;msgstr &quot;&quot;" toReformat="false" toShortenFQNames="true">
+<templateSet group="Andor - Twig">
+  <template name="if" value="{% if $condition$ %}&#10;$SELECTION$&#10;{% endif %}" toReformat="false" toShortenFQNames="true">
+    <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
       <option name="SQL" value="false" />

@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Andor - PHP">
-  <template name="fore" value="foreach ($ITERABLE$ as $$$VAR_VALUE$) {&#10;  $END$&#10;}" description="foreach(iterable_expr as $value) {...}" toReformat="true" toShortenFQNames="true">
+  <template name="fore" value="foreach ($ITERABLE$ as $$$VAR_VALUE$) {&#10;  $END$$SELECTION$&#10;}" description="foreach(iterable_expr as $value) {...}" toReformat="false" toShortenFQNames="true">
     <variable name="ITERABLE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VAR_VALUE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -13,14 +12,14 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="forek" value="foreach ($ITERABLE$ as $$$VAR_KEY$ =&gt; $$$VAR_VALUE$) {&#10;  $END$&#10;}" description="foreach(iterable_expr as $key =&gt; $value) {...}" toReformat="true" toShortenFQNames="true">
+  <template name="forek" value="foreach ($ITERABLE$ as $$$VAR_KEY$ =&gt; $$$VAR_VALUE$) {&#10;  $END$$SELECTION$&#10;}" description="foreach(iterable_expr as $key =&gt; $value) {...}" toReformat="true" toShortenFQNames="true">
     <variable name="ITERABLE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VAR_KEY" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VAR_VALUE" expression="" defaultValue="" alwaysStopAt="true" />
@@ -34,9 +33,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
@@ -52,9 +51,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
@@ -72,9 +71,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
@@ -92,9 +91,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
@@ -112,9 +111,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
@@ -132,9 +131,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
@@ -152,9 +151,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
@@ -172,9 +171,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
@@ -192,9 +191,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
@@ -212,9 +211,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
@@ -232,9 +231,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
@@ -251,9 +250,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
@@ -270,14 +269,14 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="if" value="if ($condition$) {&#10;  $END$&#10;}" description="" toReformat="true" toShortenFQNames="true">
+  <template name="if" value="if ($condition$) {&#10;  $END$$SELECTION$&#10;}" description="" toReformat="true" toShortenFQNames="true">
     <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -289,14 +288,14 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="ife" value="if ($condition$) {&#10;  $END$&#10;}&#10;else {&#10;}" description="" toReformat="true" toShortenFQNames="true">
+  <template name="ife" value="if ($condition$) {&#10;  $END$$SELECTION$&#10;}&#10;else {&#10;}" description="" toReformat="true" toShortenFQNames="true">
     <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -308,95 +307,16 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="PHP" value="true" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="if_" value="if ($condition$) {&#10;  $END$$SELECTION$&#10;}" description="" toReformat="true" toShortenFQNames="true">
-    <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="SQL" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="PHP" value="true" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="ife_" value="if ($condition$) {&#10;  $END$$SELECTION$&#10;}&#10;else {&#10;}" description="If and else with custom condition, selection goes into TRUE way." toReformat="true" toShortenFQNames="true">
-    <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="SQL" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="PHP" value="true" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="fore_" value="foreach ($ITERABLE$ as $$$VAR_VALUE$) {&#10;  $END$$SELECTION$&#10;}" description="foreach(iterable_expr as $value) {...}" toReformat="true" toShortenFQNames="true">
-    <variable name="ITERABLE" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR_VALUE" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="SQL" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="PHP" value="true" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="forek_" value="foreach ($ITERABLE$ as $$$VAR_KEY$ =&gt; $$$VAR_VALUE$) {&#10;  $END$$SELECTION$&#10;}" description="foreach(iterable_expr as $key =&gt; $value) {...}" toReformat="true" toShortenFQNames="true">
-    <variable name="ITERABLE" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR_KEY" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR_VALUE" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="SQL" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="ifc" value="if ($negate$$checker$($END$)) {&#10;&#10;}" description="" toReformat="false" toShortenFQNames="true">
     <variable name="negate" expression="enum(&quot;&quot;, &quot;!&quot;)" defaultValue="" alwaysStopAt="true" />
-    <variable name="checker" expression="enum(&quot;isset&quot;, &quot;empty&quot;, &quot;array_key_exists&quot;, &quot;is_int&quot;, &quot;is_float&quot;, &quot;is_num&quot;, &quot;is_string&quot;, &quot;is_null&quot;, &quot;is_object&quot;, &quot;is_array&quot;, &quot;in_array&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="checker" expression="enum(&quot;isset&quot;, &quot;empty&quot;, &quot;array_key_exists&quot;, &quot;is_int&quot;, &quot;is_float&quot;, &quot;is_numeric&quot;, &quot;is_string&quot;, &quot;is_null&quot;, &quot;is_object&quot;, &quot;is_array&quot;, &quot;in_array&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -407,9 +327,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
@@ -426,9 +346,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
@@ -445,9 +365,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
@@ -464,9 +384,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
@@ -483,9 +403,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
@@ -504,9 +424,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
@@ -523,9 +443,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
@@ -543,9 +463,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
@@ -562,9 +482,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
@@ -582,14 +502,14 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="func" value="function $name$ ($parameters$) {&#10;  $END$&#10;}" description="New function" toReformat="true" toShortenFQNames="true">
+  <template name="func" value="function $name$($parameters$) {&#10;  $END$&#10;}" description="New function" toReformat="true" toShortenFQNames="true">
     <variable name="name" expression="firstWord(fileNameWithoutExtension())" defaultValue="" alwaysStopAt="true" />
     <variable name="parameters" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -602,12 +522,163 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="t" value="TRUE" description="TRUE" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="f" value="FALSE" description="FALSE" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="rett" value="return TRUE;" description="Return TRUE;" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="retf" value="return FALSE;" description="Return FALSE;" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="retn" value="return NULL;" description="Return NULL;" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="getset" value="/**&#10; * @return $type$&#10; */&#10;$visibility$ function get$name$() {&#10;  return $this-&gt;$name_field$;&#10;}&#10;&#10;/**&#10; * @param $type$ $value&#10; *&#10; * @return $this&#10; */&#10;$visibility$ function set$name$($value) {&#10;  $this-&gt;$name_field$ = $value;&#10;  &#10;  return $this;&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="type" expression="enum(&quot;array&quot;, &quot;string&quot;, &quot;int&quot;, &quot;float&quot;, &quot;bool&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="visibility" expression="enum(&quot;public&quot;, &quot;protected&quot;, &quot;private&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="&quot;Foo&quot;" alwaysStopAt="true" />
+    <variable name="name_field" expression="decapitalize(name)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="getset_s" value="/**&#10; * @return $type$&#10; */&#10;$visibility$ static function get$name$() {&#10;  return static::$$$name_field$;$END$&#10;}&#10;&#10;/**&#10; * @param $type$ $value&#10; *&#10; * @return static&#10; */&#10;$visibility$ static function set$name$($value) {&#10;  static::$$$name_field$ = $value;&#10;  &#10;  return static;&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="type" expression="enum(&quot;array&quot;, &quot;string&quot;, &quot;int&quot;, &quot;float&quot;, &quot;bool&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="visibility" expression="enum(&quot;public&quot;, &quot;protected&quot;, &quot;private&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="&quot;Foo&quot;" alwaysStopAt="true" />
+    <variable name="name_field" expression="decapitalize(name)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="n" value="NULL" description="NULL" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
       <option name="PHP" value="true" />
       <option name="OTHER" value="false" />
     </context>
   </template>
 </templateSet>
-

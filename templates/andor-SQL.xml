@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Andor - SQL">
   <template name="sela" value="select * from $table$ $alias$ where $alias$.$END$;" description="select * from table with alias" toReformat="true" toShortenFQNames="false">
     <variable name="table" expression="complete()" defaultValue="" alwaysStopAt="true" />
@@ -13,9 +12,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
@@ -33,9 +32,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
@@ -53,9 +52,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
@@ -75,9 +74,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
@@ -96,9 +95,9 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
@@ -117,12 +116,11 @@
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="PHP" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
 </templateSet>
-
