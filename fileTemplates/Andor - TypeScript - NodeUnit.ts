@@ -13,7 +13,7 @@
 
 import nodeunit = require('nodeunit');
 import grunt = require('grunt');
-import $Subject = require('../../../tasks/lib/$Subject');
+import $Subject = require('../../lib/$Subject');
 
 var $name: nodeunit.ITestGroup = {
 

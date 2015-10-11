@@ -1,0 +1,57 @@
+# kate: syntax Velocity;
+
+{
+  "name": "${vendor}/${name}",
+  "description": "$description",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "@todo",
+      "email": "foo@todo.bar"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "drupal/coder",
+        "version": "8.2.3",
+        "dist": {
+          "type": "tar",
+          "url": "http://ftp.drupal.org/files/projects/coder-8.x-2.3.tar.gz"
+        }
+      }
+    }
+  ],
+  "require": {},
+  "require-dev": {
+    "drush/drush": "7.0.0",
+    "squizlabs/php_codesniffer": "2.3.4",
+    "drupal/coder": "8.2.3"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "npm install",
+      "bundle check || bundle install"
+    ],
+    "test": [
+      "composer run lint --quiet"
+    ],
+    "lint": [
+      "composer run lint-php --quiet",
+      "composer run lint-phpcs --quiet",
+      "composer run lint-scss --quiet",
+      "composer run lint-composer-lock --quiet"
+    ],
+    "lint-php": "find ./src -regextype posix-extended -type f -not -regex '^\\./source/profiles/intra/(modules/contrib|themes/contrib|libraries)/.*' -regex '.+\\.(php|inc|install|module|profile|engine)$' -print0 | xargs -0 -P8 -n1 php -l",
+    "lint-phpcs": [
+      "[ -d ./reports/checkstyle ] || mkdir --parents ./reports/checkstyle",
+      "./vendor/bin/phpcs --report=full --report-checkstyle=./reports/checkstyle/phpcs.xml --extensions=php,inc,module,install,profile --ignore='*.features.inc,*.features.*.inc,*.field_group.inc,*.strongarm.inc,*.views_default.inc,*.pages_default.inc,*.feeds_importer_default.inc,*.openlayers_maps.inc,profiles/intra/modules/contrib/**/*.*,profiles/intra/themes/contrib/**/*.*,profiles/intra/libraries/**/*.*' --standard=./vendor/drupal/coder/coder_sniffer/Drupal ./source/"
+    ],
+    "lint-scss": [
+      "bundle check || bundle install",
+      "bundle exec scss-lint"
+    ],
+    "lint-composer-lock": "! composer install --dry-run 2>&1 | grep 'The lock file is not up to date with the latest changes in composer.json.'"
+  }
+}
